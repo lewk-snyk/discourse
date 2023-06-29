@@ -19,13 +19,13 @@ else
   #
   # To issue a rails update bump the version number here
   rails_version = '7.0.3.1'
-  gem 'actionmailer', rails_version
-  gem 'actionpack', rails_version
+  gem 'actionmailer', '>= 7.0.5.1', rails_version
+  gem 'actionpack', '>= 7.0.5.1', rails_version
   gem 'actionview', rails_version
   gem 'activemodel', rails_version
   gem 'activerecord', rails_version
   gem 'activesupport', rails_version
-  gem 'railties', rails_version
+  gem 'railties', '>= 7.0.5.1', rails_version
   gem 'sprockets-rails'
 end
 
@@ -74,7 +74,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 5.0.0'
 
 gem 'fast_xs', platform: :ruby
 
@@ -165,7 +165,7 @@ group :test, :development do
 
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.0'
 
   gem 'shoulda-matchers', require: false
   gem 'rspec-html-matchers'
@@ -173,7 +173,7 @@ group :test, :development do
   gem 'rubocop-discourse', require: false, github: 'discourse/rubocop-discourse'
   gem 'parallel_tests'
 
-  gem 'rswag-specs'
+  gem 'rswag-specs', '>= 2.6.0'
 
   gem 'annotate'
 end
@@ -267,7 +267,7 @@ gem 'webpush', require: false
 gem 'colored2', require: false
 gem 'maxminddb'
 
-gem 'rails_failover', require: false
+gem 'rails_failover', '>= 1.0.0', require: false
 
 # workaround for faraday-net_http, see
 # https://github.com/ruby/net-imap/issues/16#issuecomment-803086765
