@@ -19,13 +19,13 @@ else
   #
   # To issue a rails update bump the version number here
   rails_version = '7.0.3.1'
-  gem 'actionmailer', rails_version
-  gem 'actionpack', rails_version
-  gem 'actionview', rails_version
-  gem 'activemodel', rails_version
-  gem 'activerecord', rails_version
-  gem 'activesupport', rails_version
-  gem 'railties', rails_version
+  gem 'actionmailer', '>= 7.0.7.1', rails_version
+  gem 'actionpack', '>= 7.0.7.1', rails_version
+  gem 'actionview', '>= 7.0.7.1', rails_version
+  gem 'activemodel', '>= 7.0.7.1', rails_version
+  gem 'activerecord', '>= 7.0.7.1', rails_version
+  gem 'activesupport', '>= 7.0.7.1', rails_version
+  gem 'railties', '>= 7.0.7.1', rails_version
   gem 'sprockets-rails'
 end
 
@@ -37,7 +37,7 @@ gem 'sprockets', '3.7.2'
 
 # this will eventually be added to rails,
 # allows us to precompile all our templates in the unicorn master
-gem 'actionview_precompiler', require: false
+gem 'actionview_precompiler', '>= 0.3.0', require: false
 
 gem 'seed-fu'
 
@@ -59,7 +59,7 @@ gem 'redis-namespace'
 # we used an old branch which is the fastest one out there
 # are long term goal here is to fork this gem so we have a
 # better maintained living fork
-gem 'active_model_serializers', '~> 0.8.3'
+gem 'active_model_serializers', '~> 0.9.0'
 
 gem 'http_accept_language', require: false
 
@@ -74,7 +74,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 5.0.0'
 
 gem 'fast_xs', platform: :ruby
 
@@ -165,22 +165,22 @@ group :test, :development do
 
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.0'
 
-  gem 'shoulda-matchers', require: false
+  gem 'shoulda-matchers', '>= 5.2.0', require: false
   gem 'rspec-html-matchers'
   gem 'byebug', require: ENV['RM_INFO'].nil?, platform: :mri
   gem 'rubocop-discourse', require: false, github: 'discourse/rubocop-discourse'
   gem 'parallel_tests'
 
-  gem 'rswag-specs'
+  gem 'rswag-specs', '>= 2.6.0'
 
   gem 'annotate'
 end
 
 group :development do
   gem 'ruby-prof', require: false, platform: :mri
-  gem 'bullet', require: !!ENV['BULLET']
+  gem 'bullet', '>= 7.0.4', require: !!ENV['BULLET']
   gem 'better_errors', platform: :mri, require: !!ENV['BETTER_ERRORS']
   gem 'binding_of_caller'
   gem 'yaml-lint'
@@ -228,7 +228,7 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.13.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
@@ -267,7 +267,7 @@ gem 'webpush', require: false
 gem 'colored2', require: false
 gem 'maxminddb'
 
-gem 'rails_failover', require: false
+gem 'rails_failover', '>= 1.0.0', require: false
 
 # workaround for faraday-net_http, see
 # https://github.com/ruby/net-imap/issues/16#issuecomment-803086765
