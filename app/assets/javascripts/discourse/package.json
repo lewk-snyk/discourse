@@ -80,7 +80,7 @@
     "pretender": "^3.4.7",
     "pretty-text": "^1.0.0",
     "qunit": "^2.19.1",
-    "qunit-dom": "^2.0.0",
+    "qunit-dom": "^3.0.0",
     "sass": "^1.53.0",
     "select-kit": "^1.0.0",
     "sinon": "^14.0.0",
