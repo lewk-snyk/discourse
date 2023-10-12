@@ -74,7 +74,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 5.0.0'
 
 gem 'fast_xs', platform: :ruby
 
@@ -165,7 +165,7 @@ group :test, :development do
 
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.0'
 
   gem 'shoulda-matchers', require: false
   gem 'rspec-html-matchers'
@@ -228,7 +228,7 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.13.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
