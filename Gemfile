@@ -19,14 +19,14 @@ else
   #
   # To issue a rails update bump the version number here
   rails_version = '7.0.3.1'
-  gem 'actionmailer', rails_version
-  gem 'actionpack', rails_version
+  gem 'actionmailer', '>= 7.0.8.4', rails_version
+  gem 'actionpack', '>= 7.0.8.4', rails_version
   gem 'actionview', rails_version
   gem 'activemodel', rails_version
   gem 'activerecord', rails_version
   gem 'activesupport', rails_version
-  gem 'railties', rails_version
-  gem 'sprockets-rails'
+  gem 'railties', '>= 7.0.8.4', rails_version
+  gem 'sprockets-rails', '>= 3.5.0'
 end
 
 gem 'json'
@@ -74,7 +74,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 5.0.0'
 
 gem 'fast_xs', platform: :ruby
 
@@ -130,7 +130,7 @@ gem 'rack'
 
 gem 'rack-protection' # security
 gem 'cbor', require: false
-gem 'cose', require: false
+gem 'cose', '>= 1.3.0', require: false
 gem 'addressable'
 gem 'json_schemer'
 
@@ -165,7 +165,7 @@ group :test, :development do
 
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
 
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.0.0'
 
   gem 'shoulda-matchers', require: false
   gem 'rspec-html-matchers'
@@ -173,7 +173,7 @@ group :test, :development do
   gem 'rubocop-discourse', require: false, github: 'discourse/rubocop-discourse'
   gem 'parallel_tests'
 
-  gem 'rswag-specs'
+  gem 'rswag-specs', '>= 2.6.0'
 
   gem 'annotate'
 end
@@ -228,7 +228,7 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.13.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
@@ -267,7 +267,7 @@ gem 'webpush', require: false
 gem 'colored2', require: false
 gem 'maxminddb'
 
-gem 'rails_failover', require: false
+gem 'rails_failover', '>= 1.0.0', require: false
 
 # workaround for faraday-net_http, see
 # https://github.com/ruby/net-imap/issues/16#issuecomment-803086765
