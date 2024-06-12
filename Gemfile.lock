@@ -241,7 +241,7 @@ GEM
       rack (>= 1.1.3)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
+    mini_portile2 (2.8.7)
     mini_racer (0.6.3)
       libv8-node (~> 16.10.0.0)
     mini_scheduler (0.14.0)
@@ -273,16 +273,16 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.8)
-      mini_portile2 (~> 2.8.0)
+    nokogiri (1.15.6)
+      mini_portile2 (~> 2.8.2)
       racc (~> 1.4)
-    nokogiri (1.13.8-aarch64-linux)
+    nokogiri (1.15.6-aarch64-linux)
       racc (~> 1.4)
-    nokogiri (1.13.8-arm64-darwin)
+    nokogiri (1.15.6-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-darwin)
+    nokogiri (1.15.6-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.13.8-x86_64-linux)
+    nokogiri (1.15.6-x86_64-linux)
       racc (~> 1.4)
     oauth (0.5.10)
     oauth2 (1.4.7)
@@ -337,7 +337,7 @@ GEM
     puma (5.6.5)
       nio4r (~> 2.0)
     r2 (0.2.7)
-    racc (1.6.0)
+    racc (1.8.0)
     rack (2.2.4)
     rack-mini-profiler (3.0.0)
       rack (>= 1.2.0)
@@ -434,7 +434,7 @@ GEM
       rubocop (~> 1.31)
     ruby-prof (1.4.3)
     ruby-progressbar (1.11.0)
-    ruby-readability (0.7.0)
+    ruby-readability (0.7.1)
       guess_html_encoding (>= 0.0.4)
       nokogiri (>= 1.6.0)
     ruby2_keywords (0.0.5)
@@ -619,7 +619,7 @@ DEPENDENCIES
   rswag-specs
   rubocop-discourse!
   ruby-prof
-  ruby-readability
+  ruby-readability (>= 0.7.1)
   rubyzip
   sanitize
   sassc (= 2.0.1)
