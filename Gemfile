@@ -149,7 +149,7 @@ group :assets do
 end
 
 group :test do
-  gem 'webmock', require: false
+  gem 'webmock', '>= 3.19.0', require: false
   gem 'fakeweb', require: false
   gem 'minitest', require: false
   gem 'simplecov', require: false
@@ -221,7 +221,7 @@ gem 'gc_tracer', require: false, platform: :mri
 gem 'ruby-readability', require: false
 
 # rss gem is a bundled gem from Ruby 3 onwards
-gem 'rss', require: false
+gem 'rss', '>= 0.3.0', require: false
 
 gem 'stackprof', require: false, platform: :mri
 gem 'memory_profiler', require: false, platform: :mri
