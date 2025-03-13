@@ -338,7 +338,7 @@ GEM
       nio4r (~> 2.0)
     r2 (0.2.7)
     racc (1.6.0)
-    rack (2.2.4)
+    rack (2.2.13)
     rack-mini-profiler (3.0.0)
       rack (>= 1.2.0)
     rack-protection (2.2.2)
@@ -597,7 +597,7 @@ DEPENDENCIES
   pry-rails
   puma
   r2
-  rack
+  rack (>= 2.2.13)
   rack-mini-profiler
   rack-protection
   rails_failover
