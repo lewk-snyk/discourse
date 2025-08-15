@@ -23,7 +23,7 @@ else
   gem 'actionpack', rails_version
   gem 'actionview', rails_version
   gem 'activemodel', rails_version
-  gem 'activerecord', rails_version
+  gem 'activerecord', '>= 7.1.5.2', rails_version
   gem 'activesupport', rails_version
   gem 'railties', rails_version
   gem 'sprockets-rails'
@@ -74,7 +74,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 5.0.0'
 
 gem 'fast_xs', platform: :ruby
 
@@ -267,7 +267,7 @@ gem 'webpush', require: false
 gem 'colored2', require: false
 gem 'maxminddb'
 
-gem 'rails_failover', require: false
+gem 'rails_failover', '>= 2.1.0', require: false
 
 # workaround for faraday-net_http, see
 # https://github.com/ruby/net-imap/issues/16#issuecomment-803086765
