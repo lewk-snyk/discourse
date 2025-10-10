@@ -271,4 +271,4 @@ gem 'rails_failover', require: false
 
 # workaround for faraday-net_http, see
 # https://github.com/ruby/net-imap/issues/16#issuecomment-803086765
-gem 'net-http'
+gem 'net-http', '>= 0.3.0'
