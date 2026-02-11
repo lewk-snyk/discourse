@@ -97,13 +97,13 @@ gem 'loofah'
 gem 'css_parser', require: false
 
 gem 'omniauth'
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '>= 10.0.0'
 gem 'omniauth-twitter'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 2.0.0'
 
-gem 'omniauth-oauth2', require: false
+gem 'omniauth-oauth2', '>= 1.7.3', require: false
 
-gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2', '>= 1.0.0'
 
 # pending: https://github.com/ohler55/oj/issues/789
 gem 'oj', '3.13.14'
