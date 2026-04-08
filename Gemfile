@@ -94,7 +94,7 @@ gem 'multi_json'
 gem 'mustache'
 gem 'nokogiri'
 gem 'loofah'
-gem 'css_parser', require: false
+gem 'css_parser', '>= 1.12.0', require: false
 
 gem 'omniauth'
 gem 'omniauth-facebook'
@@ -131,7 +131,7 @@ gem 'rack'
 gem 'rack-protection' # security
 gem 'cbor', require: false
 gem 'cose', require: false
-gem 'addressable'
+gem 'addressable', '>= 2.9.0'
 gem 'json_schemer'
 
 if Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.1")
@@ -149,7 +149,7 @@ group :assets do
 end
 
 group :test do
-  gem 'webmock', require: false
+  gem 'webmock', '>= 3.19.0', require: false
   gem 'fakeweb', require: false
   gem 'minitest', require: false
   gem 'simplecov', require: false
@@ -173,7 +173,7 @@ group :test, :development do
   gem 'rubocop-discourse', require: false, github: 'discourse/rubocop-discourse'
   gem 'parallel_tests'
 
-  gem 'rswag-specs'
+  gem 'rswag-specs', '>= 2.6.0'
 
   gem 'annotate'
 end
